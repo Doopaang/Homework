@@ -2,16 +2,34 @@
     <head>
         <title></title>
         <style>
-            ui.main_banner { overflow: hidden; }
-            ui.main_banner > li { list-style: none; float: left; padding: 15px; }
+            header { text-align:center; }
+            ui.main_banner { overflow:hidden; display:table; margin-left:auto; margin-right:auto; }
+            ui.main_banner > li { list-style:none; float:left; padding:15px; }
+            div { clear:both; }
+            iframe.iframe_box { border:1px; width:1000px; height:1500px; }
         </style>
     </head>
     <body>
-        <a href="main.html"><h1>Title</h1></a>
-        <ui class="main_banner">
-            <li><a href="">a</a></ll>
-            <li><a href="">b</a></ll>
-            <li><a href="">c</a></ll>
-        </ui>
+        <div id="full_wrap">
+            <div id="header_wrap">
+                <header>
+                    <a href="index.html" target="iframe_box"><h1>Title</h1></a>
+                </header>
+                <nav id="navigation">
+                    <ui class="main_banner">
+                        <li><a href="a.html" target="iframe_box">a</a></ll>
+                        <li><a href="">b</a></ll>
+                        <li><a href="">c</a></ll>
+                    </ui>
+                </nav>
+            </div>
+            <div id="content">
+                <section>
+                    <article>
+                        <iframe src="index.html" class="iframe_box" name="iframe_box"></iframe>
+                    </article>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
