@@ -1,16 +1,38 @@
 <html>
     <head>
         <style>
-            div { width:50%; height:100%; }
-            iframe { width:99%; height:100%; }
+            div { text-align:center; }
+            div.div_left { float:left; }
+            div.div_right { float:right; }
+            #div_content { width:50%; height:95%; }
+            #div_rating { width:49%; }
+            iframe { border:0px; width:99%; height:100%; }
         </style>
     </head>
     <body>
-        <div class="div_left" style="float:left;">
-            <iframe src="portfolio_a.html"></iframe>
-        </div>
-        <div class="div_right" style="float:right;">
-            <iframe src="portfolio_b.html" style="float:right;"></iframe>
+        <div id="full_wrap">
+            <div id="div_content" class="div_left">
+                <iframe src="portfolio_a.html"></iframe>
+            </div>
+            <div id="div_content" class="div_right">
+                <iframe src="portfolio_b.html" style="float:right;"></iframe>
+            </div>
+            <div id="div_rating" class="div_left">
+                <hr>
+                <label for="rating1">1</label><input type="radio" name="rating" id="rating1">
+                <label for="rating2">2</label><input type="radio" name="rating" id="rating2">
+                <label for="rating3">3</label><input type="radio" name="rating" id="rating3">
+                <label for="rating4">4</label><input type="radio" name="rating" id="rating4">
+                <label for="rating5">5</label><input type="radio" name="rating" id="rating5">
+            </div>
+            <div id="div_rating" class="div_right">
+                <hr>
+                <label for="rating1">1</label><input type="radio" name="rating" id="rating1">
+                <label for="rating2">2</label><input type="radio" name="rating" id="rating2">
+                <label for="rating3">3</label><input type="radio" name="rating" id="rating3">
+                <label for="rating4">4</label><input type="radio" name="rating" id="rating4">
+                <label for="rating5">5</label><input type="radio" name="rating" id="rating5">
+            </div>
         </div>
     </body>
 </html>
