@@ -1,5 +1,25 @@
 <html>
+    <head>
+        <style>
+            .div_content { width:50%; height:100%; }
+            iframe { width:99%; height:100%; }
+            div.div_top { height:95% }
+            div.div_under { margin:1%; }
+        </style>
+    </head>
     <body>
-        
+        <div style="text-align:center;">
+            <div class="div_top">
+                <div class="div_content" style="float:left;">
+                    <iframe src="index_a.html"></iframe>
+                </div>
+                <div class="div_content" style="float:right;">
+                    <iframe src="index_b.html" style="float:right;"></iframe>
+                </div>
+            </div>
+            <div class="div_under">
+                <input type="submit" />
+            </div>
+        </div>
     </body>
 </html>
