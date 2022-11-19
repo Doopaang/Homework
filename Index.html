@@ -3,13 +3,14 @@
         <style>
             .div_content { width:50%; height:100%; }
             iframe { width:99%; height:100%; }
-            div.div_top { height:95% }
-            div.div_under { margin:1%; }
+            div.div_center { height:94% }
+            div.div_under { padding:0%; border:0%; margin:0%; margin-top:1%; }
+            #input_submit { padding:0%; width:30%; height:3%; }
         </style>
     </head>
     <body>
         <div style="text-align:center;">
-            <div class="div_top">
+            <div class="div_center">
                 <div class="div_content" style="float:left;">
                     <iframe src="index_a.html"></iframe>
                 </div>
@@ -18,7 +19,7 @@
                 </div>
             </div>
             <div class="div_under">
-                <input type="submit" />
+                <input id="input_submit" type="submit"/>
             </div>
         </div>
     </body>
